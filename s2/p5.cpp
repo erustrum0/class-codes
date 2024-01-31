@@ -10,5 +10,5 @@ int main() {
     cout << "Enter a width (inches): ";
     cin >> wid;
     double area = len*wid;
-    cout << "The area of the described shape is " << area << " cubic inches.\n";
+    cout << "The area of the described shape is " << area << " square inches.\n";
 }
