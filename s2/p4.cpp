@@ -2,9 +2,10 @@
 using namespace std;
 
 int main() {
-    char character;
-    cout << "Enter a character: ";
-    cin >> character;
-    int ascii_value = int(character);
-    cout << "That character's ASCII value is " << ascii_value << ", right?\n";
+    //b = round(a /100*9 + a, 2) - Formula for tax
+    double startnum;
+    cout << "Enter a price: ";
+    cin >> startnum;
+    double taxnum = startnum/100*9 + startnum;
+    cout << "The final price, after tax would be " << taxnum << ".\n";
 }
