@@ -7,5 +7,7 @@ int main() {
     cout << "Enter a number (double type): ";
     cin >> number;
     double sqrt_number = sqrt(number);
+    double sq_number = number * number;
     cout << "Just a guess, but the square root of that number is " << sqrt_number << "?\n";
+    cout << "In case the square is wanted instead, that's " << sq_number << ". Have a nice day!\n";
 }
