@@ -1,3 +1,4 @@
+//Old assignment, was removed. Finds ascii value of given character.
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,4 @@
+//Calculates SQRT and square of user inputted number.
 #include <iostream>
 #include <cmath>
 using namespace std;

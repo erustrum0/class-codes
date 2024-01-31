@@ -1,3 +1,4 @@
+//Outputs user inputted number.
 #include <iostream>
 using namespace std;
 

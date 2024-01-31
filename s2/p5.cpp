@@ -1,3 +1,4 @@
+//Calculates area of a given rectangle of length and width given by the user.
 #include <iostream>
 using namespace std;
 

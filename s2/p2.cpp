@@ -1,3 +1,4 @@
+//Adds two user inputted numbers.
 #include <iostream>
 using namespace std;
 
