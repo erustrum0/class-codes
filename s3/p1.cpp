@@ -7,10 +7,7 @@ int main() {
     cout << "Enter a number: ";
     cin >> number;
 
-    string result = "greater or equal to ";
-
-    if (number < 10) {
-        result = "less than ";
+    if (number > 10) {
+        cout << "Your number is greater than ten.\n";
     };
-    cout << "That number is " << result << "ten!\n";
 }
