@@ -1,4 +1,5 @@
 //Determines whether or not a given number is equal to 20.
+
 #include <iostream>
 using namespace std;
 
