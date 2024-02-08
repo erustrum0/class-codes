@@ -1,4 +1,4 @@
-//Determines the largest among three numbers.
+// Determines the largest among three numbers.
 
 #include <iostream>
 
@@ -15,7 +15,7 @@ int main() {
     std::cout << "C: ";
     std::cin >> c;
 
-    //We now have all the numbers. Time to sort!
+    // We now have all the numbers. Time to sort!
     if (a >= b && a >= c) {
         largest = a;
     } else if (b >= a && b >= c) {
