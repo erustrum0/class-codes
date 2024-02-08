@@ -68,6 +68,6 @@ int main()
     }
 
     // If we can't find the month, we exit the loop in defeat.
-    cout << "Could not find that month.\n";
+    cout << "Couldn't find that month!" << endl;
     return -1;
 }
