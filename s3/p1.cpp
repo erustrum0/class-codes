@@ -1,4 +1,4 @@
-//Determines whether or not a given number is larger than 10.
+// Determines whether or not a given number is larger than 10.
 
 #include <iostream>
 using namespace std;

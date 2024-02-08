@@ -16,7 +16,7 @@ char num_arr[20] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
 int main() {
     char c;
     std::cout << "Enter a character: " << std::flush;   // std::flush flushes the cout before getch runs (so that the text shows up).
-    c = getch();                                        // I made the mistake originally of using the bitwise >> for getch(), which does not work.
+    c = tolower(getch());                               // I made the mistake originally of using the bitwise >> for getch(), which does not work.
     std::cout << "\n\n" << std::flush;                  // Newlines for lookin' nice!
 
     // Now we must search for the char in our arrays. The result variable is a pointer, as denoted by the asterisk,
@@ -49,6 +49,6 @@ int main() {
         return 139;                         // Redundancy.
     }
 
-    std::cout << "Could not find your character.";
+    std::cout << "Could not find your character." << std::endl;
     return -1; // Failure state, happens if you use special characters.
 }
