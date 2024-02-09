@@ -20,6 +20,6 @@ int main() {
         return 0;
     };
     // this is equivalent to an else statement
-    cout << a << "." << endl;
+    cout << b << "." << endl;
     return 0;
 }
