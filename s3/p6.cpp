@@ -1,22 +1,29 @@
-// Determine polarity of a number.
+// Determines the largest among three numbers.
 
 #include <iostream>
 
 int main() {
-    int number;
+    int a;
+    int b;
+    int c;
+    int largest;
 
-    std::cout << "Please input a number: ";
-    std::cin >> number;
+    std::cout << "Please input three numbers:\nA: ";
+    std::cin >> a;
+    std::cout << "B: ";
+    std::cin >> b;
+    std::cout << "C: ";
+    std::cin >> c;
 
-    // This is pretty messy, honestly. Whatever.
-    if (number == 0) {
-        std::cout << "The number is equal to zero.";
-    } else if (number > 0) {
-        std::cout << "The number is positive.";
+    // We now have all the numbers. Time to sort!
+    if (a >= b && a >= c) {
+        largest = a;
+    } else if (b >= a && b >= c) {
+        largest = b;
     } else {
-        std::cout << "The number is negative.";
+        largest = c;
     }
-    std::cout << "\n"; // This is just for looking nice.
 
+    std::cout << "\nThe largest is " << largest << ".\n";
     return 0;
 }

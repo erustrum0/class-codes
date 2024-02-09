@@ -1,17 +1,25 @@
-// Determines whether or not a given number is larger than, smaller than or equal to 10.
+// Determines the largest of two numbers.
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int number;
+    int a;
     cout << "Enter a number: ";
-    cin >> number;
+    cin >> a;
 
-    string result = "greater or equal to ";
+    int b;
+    cout << "Enter another number: ";
+    cin >> b;
 
-    if (number < 10) {
-        result = "less than ";
+    cout << "The larger number is ";
+
+    // if a>b then
+    if (a>b) {
+        cout << a << "." << endl;
+        return 0;
     };
-    cout << "That number is " << result << "ten!\n";
+    // this is equivalent to an else statement
+    cout << a << "." << endl;
+    return 0;
 }
