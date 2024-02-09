@@ -12,7 +12,7 @@ int main() {
         cout << "\nYay!\n";
         return 0;
     };
-    cout << "\nThat wasn't the letter 'a'... You know what, have this segfa" << flush;
+    cout << "\nThat wasn't the letter 'a'... You know what, have this segfau-" << flush;
     int* ptr = nullptr; // null pointer to the rescue!
     *ptr = 10;
 }
