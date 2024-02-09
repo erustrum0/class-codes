@@ -15,29 +15,29 @@ char num_arr[20] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
 
 int main() {
     char c;
-    std::cout << "Enter a character: " << std::flush;   // std::flush flushes the cout before getch runs (so that the text shows up).
+    cout << "Enter a character: " << flush;             // flush flushes the cout before getch runs (so that the text shows up).
     c = tolower(getch());                               // I made the mistake originally of using the bitwise >> for getch(), which does not work.
-    std::cout << "\n\n" << std::flush;                  // Newlines for lookin' nice!
+    cout << "\n\n" << flush;                            // Newlines for lookin' nice!
 
     // Now we must search for the char in our arrays. The result variable is a pointer, as denoted by the asterisk,
     char* result;
 
-    result = std::find(std::begin(vowel_arr), std::end(vowel_arr), c);
+    result = find(begin(vowel_arr), end(vowel_arr), c);
 
-    if (result != std::end(vowel_arr)) {
-        std::cout << "The character entered is a vowel." << std::endl;
+    if (result != end(vowel_arr)) {
+        cout << "The character entered is a vowel." << endl;
         return 0;
     }
 
-    result = std::find(std::begin(cons_arr), std::end(cons_arr), c);
-    if (result != std::end(cons_arr)) {
-        std::cout << "The character entered is a consonant." << std::endl;
+    result = find(begin(cons_arr), end(cons_arr), c);
+    if (result != end(cons_arr)) {
+        cout << "The character entered is a consonant." << endl;
         return 0;
     }
 
-    result = std::find(std::begin(num_arr), std::end(num_arr), c);
-    if (result != std::end(num_arr)) {
-        std::cout << "The character entered is a number." << std::endl;
+    result = find(begin(num_arr), end(num_arr), c);
+    if (result != end(num_arr)) {
+        cout << "The character entered is a number." << endl;
         return 0;
     }
 
@@ -49,6 +49,12 @@ int main() {
         return 139;                         // Redundancy.
     }
 
-    std::cout << "Could not find your character." << std::endl;
+    if (c == '?') {
+        // This is a fake help screen, just for fun
+        cout << "You've found the super secret help screen!\nThis program will tell apart letters, consonants and vowels (and in rare cases, the '!' or '?' character).\nOther characters will not work.\n\nHave a great day!\n";
+        return 255; // Just for fun :D
+    }
+
+    cout << "Could not find your character." << endl;
     return -1; // Failure state, happens if you use special characters.
 }
