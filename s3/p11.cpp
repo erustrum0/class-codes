@@ -56,7 +56,7 @@ int main()
         input = std::stoi(raw_input);
     } else {
         // Exit in defeat if the user typed something that isn't a number.
-        std::cout << "That's not a number. Try using a number.\n";
+        std::cout << "That's not a number. Try using a number (negative numbers don't count as numbers here, sorry).\n";
         return -1;
     }
 
@@ -80,6 +80,7 @@ int main()
     }
 
     // If not larger than zero, it's a negative number.
+    // You can't type negative numbers anyways.
     std::cout << "Negative polygons aren't counted, sorry!" << std::endl;
     return -1;
 }
