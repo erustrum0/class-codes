@@ -1,18 +1,3 @@
-//logic loop, beginning
-//make number
-//start loop
-//  get input
-//  compare
-//  if higher
-//    feedback
-//    continue
-//  if lower
-//    feedback
-//    continue
-//  player wins, end (go to beginning)
-
-
-
 #include <iostream>
 #include <cstdlib>
 #include <time.h>
