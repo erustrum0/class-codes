@@ -2,10 +2,11 @@
 #include <iostream>
 
 int main() {
+    int q;
     int student_count = 5;
     std::cout << "Please input " << student_count << " heights (in inches) for students.";
     for (int i = student_count; i > 0; i++) {
-        //do this later
+        
     }
     return 0;
 }
