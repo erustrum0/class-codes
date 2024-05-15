@@ -1,0 +1,6 @@
+this is the content of the file: 
+line 2: #include<iostream> 
+line 3: #include<fstream> 
+
+line 5: int main() { 
+line 6:     ifstream f1("input.txt");
